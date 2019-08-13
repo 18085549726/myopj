@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播图练习</title>
+    <style>
+        *{
+            margin: 0;
+           padding: 0;
+        }
+        img{
+            width: 400px;
+            height: 200px;
+            float: left;
+           
+        }
+        .box-img{
+            width: 1200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: mymove 10s;
+        }
+        .box{
+            width: 400px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        @keyframes mymove{
+            0%,20%{
+                left: 0;
+            }
+            45%,60%{
+                left: -400px;
+            }
+            85%,100%{
+                left: -800px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box-img">
+            <img src="img/3.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/1.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
